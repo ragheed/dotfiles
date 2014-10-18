@@ -167,8 +167,10 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 exec --no-startup-id xrandr --output VGA1 --mode 1920x1080 --left-of LVDS1
 #exec_always --no-startup-id xrandr --output LVDS1 --mode 1366x768 --right-of VGA1
 
+bindsym Control+mod1+l exec i3lock
+
 #keyboard profiles, toggle with Alt+Shift
 exec --no-startup-id setxkbmap -layout us,sy -option grp:alt_shift_toggle
-
+exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id nm-applet
 

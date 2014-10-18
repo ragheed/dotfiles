@@ -8,7 +8,7 @@ this repo contains dotfiles, including but not only i3 config and vim config.
 - *ranger* is a good text based file browser
 
 ###TODO:
-* i3-lock config
+* modify i3-lock background and theme
 * better multi monitor config
 * add background
 * assign auto started application (chrome / konsole) to desktops
