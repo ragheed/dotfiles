@@ -164,7 +164,9 @@ bindsym XF86AudioRaiseVolume exec amixer -q set Master 10%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 10%- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
-exec --no-startup-id xrandr --output VGA1 --mode 1920x1080 --left-of LVDS1
+exec --no-startup-id xrandr --output VIRTUAL1 --off --output DP2 --off --output DP1 --mode 1920x1200 --pos 0x0 --rotate normal --output HDMI2 --off --output HDMI1 --off --output eDP1 --mode 1366x768 --pos 1920x432 --rotate normal --output VGA1 --mode 1920x1200 --pos 3286x0 --rotate normal
+#exec --no-startup-id xrandr --output VGA1 --mode 1920x1200 --right-of eDP1
+#exec --no-startup-id xrandr --output DP1 --mode 1920x1200 --left-of eDP1
 #exec_always --no-startup-id xrandr --output LVDS1 --mode 1366x768 --right-of VGA1
 
 bindsym Control+mod1+l exec i3lock
