@@ -90,10 +90,12 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+
+
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
+bindsym $mod+1 workspace 1 Main
+bindsym $mod+2 workspace 2 <span foreground="green">Code!!</span>
+bindsym $mod+3 workspace 3 Misc
 bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
@@ -103,9 +105,9 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+1 move container to workspace 1 Main
+bindsym $mod+Shift+2 move container to workspace 2 <span foreground="green">Code!!</span>
+bindsym $mod+Shift+3 move container to workspace 3 Misc
 bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
@@ -150,7 +152,8 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status --config ~/.i3/i3status.conf
+        #status_command i3status --config ~/.i3/i3status.conf
+        status_command py3status --config ~/.i3/i3status.conf
         #status_command /home/me/.i3/i3script.sh
         position bottom
 }
@@ -172,6 +175,11 @@ bindsym $mod+m move workspace to output eDP1
 bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 10%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 10%- unmute
 bindsym XF86AudioMute exec amixer -D pulse sset Master toggle
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play-pause
+#bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
 exec_always --no-startup-id xrandr --output VGA1 --mode 1920x1200 --right-of eDP1 --output DP1 --mode 1920x1200 --left-of eDP1
 #exec_always --no-startup-id xrandr --output VGA1 --mode 1920x1080 --right-of eDP1 
@@ -181,7 +189,7 @@ exec_always --no-startup-id xrandr --output VGA1 --mode 1920x1200 --right-of eDP
 bindsym Control+mod1+l exec i3lock
 
 #setting the background
-exec_always --no-startup-id feh --bg-scale /home/ragheed/.bg.jpg
+exec_always --no-startup-id feh --bg-scale /home/ragheed/.bg.png
 
 #keyboard profiles, toggle with Alt+Shift
 exec_always --no-startup-id setxkbmap -layout us,sy -option grp:alt_shift_toggle
