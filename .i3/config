@@ -65,6 +65,19 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
+# move focused workspace
+bindsym $mod+Control+j move workspace to output left
+bindsym $mod+Control+k move workspace to output down
+bindsym $mod+Control+l move workspace to output up
+bindsym $mod+Control+semicolon move workspace to output right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Control+Left move workspace to output left
+bindsym $mod+Control+Down move workspce to output down
+bindsym $mod+Control+Up move workspace to output up
+bindsym $mod+Control+Right move workspace to output right
+
+
 # split in horizontal orientation
 bindsym $mod+h split h
 
@@ -171,9 +184,10 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 exec --no-startup-id xrandr --output VGA1 --mode 1920x1080 --right-of LVDS1
+#exec --no-startup-id xrandr --output HDMI1 --mode 1920x1200 --left-of LVDS1
 #exec_always --no-startup-id xrandr --output LVDS1 --mode 1366x768 --right-of VGA1
 
-bindsym Control+mod1+l exec i3lock
+bindsym Control+mod1+l exec i3lock -i ~/.bg.png -d -t
 
 #keyboard profiles, toggle with Alt+Shift
 exec --no-startup-id setxkbmap -layout us,sy -option grp:alt_shift_toggle
