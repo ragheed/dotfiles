@@ -7,6 +7,7 @@ this repo contains dotfiles, including but not only i3 config and vim config.
 - *nm-applet* and *gnome-keyring* is needed for network-manager to work
 - *ranger* is a good text based file browser
 - *pcmanfm* looks nice for gui fm
+- *termite* as a terminal emulator
 
 ###TODO:
 * modify i3-lock background and theme
