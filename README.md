@@ -10,7 +10,6 @@ this repo contains dotfiles, including but not only i3 config and vim config.
 - *termite* as a terminal emulator
 
 ###TODO:
-* modify i3-lock background and theme
 * better multi monitor config
 * assign auto started application (chrome / console) to desktops
 * auto assign apps to default desktop once monitor is disconnected
