@@ -13,7 +13,5 @@ this repo contains dotfiles, including but not only i3 config and vim config.
 * better multi monitor config
 * assign auto started application (chrome / console) to desktops
 * auto assign apps to default desktop once monitor is disconnected
-* add vimrc
 * add deps
 * zshrc, antigen
-* dircolors
