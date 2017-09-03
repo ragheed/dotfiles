@@ -14,4 +14,3 @@ this repo contains dotfiles, including but not only i3 config and vim config.
 * assign auto started application (chrome / console) to desktops
 * auto assign apps to default desktop once monitor is disconnected
 * add deps
-* zshrc, antigen
