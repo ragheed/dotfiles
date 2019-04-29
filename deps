@@ -1,4 +1,7 @@
 * file manager: pcmanfm
 * font: Monaco, Monaco-powerline
 * zsh: zshrc, antigen
-* dircolors
+* playerctl
+* rbenv
+* git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+Nerd fonts (hack)

@@ -25,6 +25,7 @@ Plugin 'wesQ3/vim-windowswap'
 Plugin 'godlygeek/tabular'
 Plugin 'Buffergator'
 Plugin 'ShowTrailingWhitespace'
+Plugin 'ryanoasis/vim-devicons'
 
 
 " Color Schemes
@@ -75,7 +76,9 @@ set cindent         "Like smartindent, but stricter and more customisable
 
 " highlight current line
 set cursorline
+set cursorcolumn
 
+set encoding=UTF-8
 " hightlight column 80
 set cc=80
 
@@ -94,7 +97,8 @@ let g:multi_cursor_start_key='<F6>'
 
 :set nu
 ":set guifont=Monaco
-:set guifont=Monaco\ for\ Powerline
+":set guifont=Monaco\ for\ Powerline\ 12
+:set guifont=Hack\ Nerd\ Font\ 12
 
 :set guioptions-=m  "remove menu bar
 :set guioptions-=T  "remove toolbar
