@@ -20,3 +20,10 @@ this repo contains dotfiles, including but not only i3 config and vim config.
 * powerline fonts submodule
 * fonts-font-awesome package
 * nerd-fonts
+
+## Install
+- clone into .dotfiles
+- `cd .dotfiles`
+- `stow .`
+- clone vundle
+- in Vim run `:PluginInstall`

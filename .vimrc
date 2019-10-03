@@ -3,6 +3,8 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+" set runtime to include ctrlp
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -15,7 +17,6 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'ctrlp.vim'
 Plugin 'vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'plasticboy/vim-markdown'
