@@ -16,14 +16,13 @@ POWERLEVEL9K_TIME_FORMAT="%D{\uf017 %H:%M}"
 #context is username
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator host dir_writable dir aws vcs)
 #POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs rbenv virtualenv command_execution_time battery time)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs rbenv virtualenv command_execution_time time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs rbenv command_execution_time time)
 
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 POWERLEVEL9K_SHORTEN_STRATEGY=truncate_from_right
 POWERLEVEL9K_SHORTEN_DELIMITER=""
 
-source /usr/local/bin/virtualenvwrapper.sh
-source /usr/share/zsh-antigen/antigen.zsh
+source /usr/share/zsh/share/antigen.zsh
 
 # Load the oh-my-zsh's library
 antigen use oh-my-zsh
@@ -61,8 +60,8 @@ path+=("${KREW_ROOT:-$HOME/.krew}/bin")
 export PATH
 
 eval "$(rbenv init -)"
-alias aws-okta=". ~/.aws_okta/aws-okta"
+#alias aws-okta=". ~/.aws_okta/aws-okta"
 #if [ $HOME/.local/bin/kubectl ]; then source <(kubectl completion zsh); fi
 #
-alias h3=/usr/local/bin/tmp/helm
+#alias h3=/usr/local/bin/tmp/helm
 alias kc=kubectl
