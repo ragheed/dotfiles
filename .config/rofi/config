@@ -1,7 +1,0 @@
-rofi.modi:          run,window
-rofi.font:          hack 10
-rofi.theme: /usr/share/rofi/themes/arthur.rasi
-rofi.columns:       7
-rofi.bw:            0
-rofi.lines:         2
-rofi.separator-style:   none
