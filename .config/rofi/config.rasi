@@ -1,7 +1,6 @@
 configuration {
   modi:          "run,window";
   font:          "hack 10";
-  theme: "/usr/share/rofi/themes/arthur.rasi";
   columns:       "7";
   bw:            "0";
   lines:         "2";
@@ -9,3 +8,4 @@ configuration {
   icon-theme: "Papirus";
   show-icons: true;
 }
+@theme "/usr/share/rofi/themes/arthur.rasi"
